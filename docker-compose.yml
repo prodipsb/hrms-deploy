@@ -23,7 +23,7 @@ services:
   fastapi:
     build: ../hrms-backend
     ports:
-      - "8000:8000"
+      - "8080:8000"
     environment:
       DATABASE_URL: postgresql://${DB_USERNAME}:${DB_PASSWORD}@postgres:5432/${DB_NAME}
       SECRET_KEY: ${JWT_SECRET}
